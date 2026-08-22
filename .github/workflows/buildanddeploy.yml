@@ -20,7 +20,7 @@ jobs:
       run: echo "RELEASE=${{ github.event.release.tag_name }}" >> $GITHUB_ENV
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag cr0wm4n/jackettioP2P:${{ github.event.release.tag_name }}
+      run: docker build . --file Dockerfile --tag cr0wm4n/jackettiop2p:${{ github.event.release.tag_name }}
 
     - name: Push the Docker image
-      run: docker push cr0wm4n/jackettioP2P:${{ github.event.release.tag_name }}
+      run: docker push cr0wm4n/jackettiop2p:${{ github.event.release.tag_name }}
