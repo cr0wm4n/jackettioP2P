@@ -1,3 +1,4 @@
+import p2p from "./debrid/p2p.js";
 import debridlink from "./debrid/debridlink.js";
 import alldebrid from "./debrid/alldebrid.js";
 import realdebrid from './debrid/realdebrid.js';
@@ -9,7 +10,7 @@ import offcloud from './debrid/offcloud.js';
 import torbox from './debrid/torbox.js';
 export {ERROR} from './debrid/const.js';
 
-const debrid = {debridlink, alldebrid, realdebrid, premiumize, stremthru, pikpak, easydebrid, offcloud, torbox};
+const debrid = {p2p, debridlink, alldebrid, realdebrid, premiumize, stremthru, pikpak, easydebrid, offcloud, torbox};
 
 // Propriété pour vérifier si la vérification de cache est disponible
 export const cacheCheckAvailable = true;
