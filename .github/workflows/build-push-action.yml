@@ -34,9 +34,9 @@ jobs:
           push: true
           platforms: linux/amd64,linux/arm64
           tags: |
-            ghcr.io/telkaoss/jackettio:latest
-            ghcr.io/telkaoss/jackettio:${{ github.event.release.tag_name }}
+            ghcr.io/cr0wm4n/jackettioP2P:latest
+            ghcr.io/cr0wm4n/jackettioP2P:${{ github.event.release.tag_name }}
           labels: |
             org.opencontainers.image.source=${{ github.server_url }}/${{ github.repository }}
             org.opencontainers.image.description=Docker image for Jackettio
-            org.opencontainers.image.title=Jackettio
+            org.opencontainers.image.title=JackettioP2P
